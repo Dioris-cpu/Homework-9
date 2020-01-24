@@ -98,6 +98,8 @@ jQuery(document).ready(function($) {
       type: "POST",
       url: action,
       data: str,
+      cors: true,
+      dataType: 'json',
       success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
